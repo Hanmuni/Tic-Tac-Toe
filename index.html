@@ -1,0 +1,88 @@
+<html>
+
+<head>
+        <title> Tic-Tac-Toe </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="game.js"> </script>
+</head>
+
+<body>
+        <img src="img/game_over.png" class="game-over d-none" id="game-over">
+        <a href="#" class="restart-btn d-none" id="restart-btn" onclick="restart()"> Restart Game </a>
+        <div class="player-panel">
+
+                <div class="inactive-player player-panel-child" id="player-1"> <img src="img/circle.png"> Turn: Player 1
+                </div>
+
+                <div class="inactive-player player-panel-child" id="player-2"> <img src="img/cross.png"> Turn: Player 2
+                </div>
+
+        </div>
+
+        <table>
+
+                <tr>
+                        <td onclick="fillGame(1)"> <img class="img-symbol d-none" id="circle-1"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-1"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(2)"> <img class="img-symbol d-none" id="circle-2"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-2"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(3)"> <img class="img-symbol d-none" id="circle-3"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-3"
+                                        src="img/cross.png">
+                        </td>
+                </tr>
+
+                <tr>
+                        <td onclick="fillGame(4)"> <img class="img-symbol d-none" id="circle-4"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-4"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(5)"> <img class="img-symbol d-none" id="circle-5"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-5"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(6)"> <img class="img-symbol d-none" id="circle-6"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-6"
+                                        src="img/cross.png">
+                        </td>
+                </tr>
+
+                <tr>
+                        <td onclick="fillGame(7)"> <img class="img-symbol d-none" id="circle-7"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-7"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(8)"> <img class="img-symbol d-none" id="circle-8"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-8"
+                                        src="img/cross.png">
+                        </td>
+                        <td onclick="fillGame(9)"> <img class="img-symbol d-none" id="circle-9"
+                                        src="img/circle.png"><img class="img-symbol d-none" id="cross-9"
+                                        src="img/cross.png">
+                        </td>
+                </tr>
+
+        </table>
+
+        <div class="horizontal-line" id="line-1" style="top: 30vh;"></div>
+        <div class="horizontal-line" id="line-2" style="top: 60vh;"></div>
+        <div class="horizontal-line" id="line-3" style="top: 90vh;"></div>
+
+        <div class="horizontal-line" id="line-4" style="bottom: 40vh; left: 15vw; transform: rotate(90deg) scaleX(0.0);"></div>
+        <div class="horizontal-line" id="line-5" style="bottom: 40vh; left: 30vw; transform: rotate(90deg) scaleX(0.0);"></div>
+        <div class="horizontal-line" id="line-6" style="bottom: 40vh; left: 45vw; transform: rotate(90deg) scaleX(0.0);"></div>
+
+        <div class="horizontal-line" id="line-7" style="bottom: 40vh; width: 50vw; transform: rotate(45deg) scaleX(0.0);"></div>
+
+        <div class="horizontal-line" id="line-8" style="bottom: 40vh; width: 50vw; transform: rotate(-45deg) scaleX(0.0);"></div>
+</body>
+
+</html>
